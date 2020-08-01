@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ihenx.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,700&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 id>ihenx web institute</h1>
+            <p id="description">Thank you for making out time to help improve this website</p>
+        </header>
+
+        <!-- form -->
+        <section id="form">
+            <form action="post" id="survey-form">
+                
+                    
+                        <div class="form-group">
+                            <label for="name" id="name-label">First name</label>
+                            <input type="text" name="name" id="name" class="form-control"
+                                placeholder="first-name" required>
+                        </div>
+                    
+                    
+                
+                <div class="form-group">
+                    <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
+                    <input type="number" name="number" id="number" class="form-control" placeholder="age" min="10"
+                        max="100">
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">E-mail</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="email" required>
+                </div>
+
+                <div class="form-group">
+                    <p>Which option best describe your current role</p>
+                    <select name="role" id="dropdown" class="form-control">
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">job</option>
+                        <option value="unemployed">unemployed</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend Ihenx Web Institute to a friend?</p>
+                    <label for="definitely">
+                        <input type="radio" value="definitely" name="recommend" id="recommend" class="input-radio"
+                            checked>
+                        Definitely
+                    </label>
+                    <label for="maybe">
+                        <input type="radio" value="maybe" name="recommend" id="recommend" class="input-radio">
+                        maybe
+                    </label>
+                    <label for="not sure">
+                        <input type="radio" name="recommend" id="recommend" class="input-radio" value="not sure">
+                        Not sure
+                    </label>
+
+                </div>
+                <div class="form-group">
+                    <p>What would you like to see improve ?<span class="clue">(Check all that apply)</span></p>
+                    <div id="flex">
+                        <div class="left">
+                            <label for="Front-end project">
+                                <input type="checkbox" name="prefer" id="prefer" value="front-end projects"
+                                    class="input-checkbox">
+                                Front-end Projects
+                            </label>
+                            <label for="Data-Visualization">
+                                <input type="checkbox" name="prefer" id="prefer" value="Data-Visualization"
+                                    class="input-checkbox">
+                                Data Visualization
+                            </label>
+                            <label for="Challenges">
+                                <input type="checkbox" name="prefer" id="prefer" value="Challenges"
+                                    class="input-checkbox">
+                                Challenges
+                            </label>
+                            <label for="Open-source-community">
+                                <input type="checkbox" name="prefer" id="prefer" value="Open-source-community"
+                                    class="input-checkbox">
+                                Open source Community
+                            </label>
+                            <label for="Gitter-help-rooms">
+                                <input type="checkbox" name="prefer" id="prefer" value="Gitter-help-rooms"
+                                    class="input-checkbox">
+                                Gitter Help Rooms
+                            </label>
+                        </div>
+                        <div id="right">
+                            <label for="Videos">
+                                <input type="checkbox" name="prefer" id="prefer" value="Videos" class="input-checkbox">
+                                Videos
+                            </label>
+                            <label for="additional-course">
+                                <input type="checkbox" name="prefer" id="prefer" value="additional-courses"
+                                    class="input-checkbox">
+                                Additional courses
+                            </label>
+                            <label for="City-meetups">
+                                <input type="checkbox" name="prefer" id="prefer" value="City-meetups"
+                                    class="input-checkbox">
+                                City Meetups
+                            </label>
+                            <label for="Wiki">
+                                <input type="checkbox" name="prefer" id="prefer" value="Wiki" class="input-checkbox">
+                                Wiki
+                            </label>
+                            <label for="Forum">
+                                <input type="checkbox" name="prefer" id="prefer" value="Forum" class="input-checkbox">
+                                Forum
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>Any comments or Suggestions?</p>
+                        <textarea name="comment" id="comments" cols="30" rows="10" class="input-textarea"
+                            placeholder="enter comments..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+            </form>
+        </section>
+        <!-- footer -->
+        <footer>
+            <p>Survey Form written by Godspower Iheanacho</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
